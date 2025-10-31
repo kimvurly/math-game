@@ -1,0 +1,29 @@
+{% extends "levels_layout.html" %}
+
+{% block title %}
+    addition
+{% endblock %}
+
+{% block content %}
+<h1>addition level</h1>
+<div class="problem_box">
+    <p>{{ problem }}</p>
+    <p>{{ answer }}</p>
+    <form method="POST">
+        <div class="enter_form">
+            <input type="hidden" name="problem" value="{{ problem }}">
+            <input type="text" name="answer" placeholder="answer?" required>
+            <input type="hidden" name="correct_answer" value="{{ answer }}">
+            <button type ="submit" name="submit_button" value="enter_algebra_1">enter</button>
+        </div>
+    </form>
+</div>
+
+{% if error %}
+<!-- display a browser alert with the right answer-->
+<script>
+    alert("{{ error }}");
+</script>
+{% endif %}
+
+{% endblock %}
