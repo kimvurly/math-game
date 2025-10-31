@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{% block title %}{% endblock %} | kim's math game</title>
+    <link rel="stylesheet" href="/static/stylesheets/main.css">
     {% block head %}{% endblock %}
 </head>
 <body>
     <div class="topnav">
-
+        <div class="topnav_row">
+            <form method="POST">
+                <div class="exit">
+                    <button type ="submit" name="exit_button" value="exit_button">exit</button>
+                </div>
+            </form>
+            <a href="https://github.com/kimvurly">kim's github</a>
+        </div>
+        <img id="logo" src="/static/images/kimberly_logo.png">
     </div>
     <div class="content">
-        
         {% block content %}{% endblock %}
     </div>
 </body>
