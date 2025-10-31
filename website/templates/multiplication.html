@@ -1,11 +1,11 @@
 {% extends "levels_layout.html" %}
 
 {% block title %}
-    subtraction
+    mutliplication
 {% endblock %}
 
 {% block content %}
-<h1>subtraction level</h1>
+<h1>multiplication level</h1>
 <div class="problem_box">
     <p>{{ problem }}</p>
     <form method="POST">
@@ -13,7 +13,7 @@
             <input type="hidden" name="problem" value="{{ problem }}">
             <input type="number" name="answer" placeholder="answer?" required>
             <input type="hidden" name="correct_answer" value="{{ answer }}">
-            <button type ="submit" name="submit_button" value="enter_subtraction">enter</button>
+            <button type ="submit" name="submit_button" value="enter_multiplication">enter</button>
         </div>
     </form>
 </div>
