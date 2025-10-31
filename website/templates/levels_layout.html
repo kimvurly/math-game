@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="topnav">
-        <div class="topnav_row">
+        <img id="logo" src="/static/images/kimberly_logo.png">
+        <div class="topnav_right">
+            <a href="https://github.com/kimvurly">kim's github</a>
             <form method="POST">
                 <div class="exit">
-                    <button type ="submit" name="exit_button" value="exit_button">exit</button>
+                    <button type ="submit" name="submit_button" value="exit_button">exit</button>
                 </div>
             </form>
-            <a href="https://github.com/kimvurly">kim's github</a>
         </div>
-        <img id="logo" src="/static/images/kimberly_logo.png">
     </div>
     <div class="content">
         {% block content %}{% endblock %}
